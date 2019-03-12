@@ -38,7 +38,7 @@ public class AmazonBase {
 	@AfterClass
 	public static void CloseBrowser()
 	{
-		driver.close();
 		Reporter.log("      Closing...", true);
+		driver.close();
 	}
 }	
