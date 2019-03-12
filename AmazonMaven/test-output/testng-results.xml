@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+    <line>
+      <![CDATA[      Cleaning...]]>
+    </line>
+    <line>
+      <![CDATA[      Closing...]]>
+    </line>
+    <line>
+      <![CDATA[      Cleaning...]]>
+    </line>
+    <line>
+      <![CDATA[      Closing...]]>
+    </line>
+  </reporter-output>
+  <suite name="SUITE NAME GOES HERE" duration-ms="115878" started-at="2019-03-12T13:46:21Z" finished-at="2019-03-12T13:48:17Z">
+    <groups>
+    </groups>
+    <test name="TEST NAME GOES HERE" duration-ms="115878" started-at="2019-03-12T13:46:21Z" finished-at="2019-03-12T13:48:17Z">
+      <class name="tests.SmokeTestCase">
+        <test-method status="PASS" signature="SetupAmazon()[pri:0, instance:tests.SmokeTestCase@7823a2f9]" name="SetupAmazon" is-config="true" duration-ms="24808" started-at="2019-03-12T15:46:21Z" finished-at="2019-03-12T15:46:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[      Cleaning...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SetupAmazon -->
+        <test-method status="PASS" signature="AddtoCartSmoke()[pri:0, instance:tests.SmokeTestCase@7823a2f9]" name="AddtoCartSmoke" duration-ms="10756" started-at="2019-03-12T15:46:46Z" description="Test adds an item to the cart, SMOKE" finished-at="2019-03-12T15:46:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddtoCartSmoke -->
+        <test-method status="PASS" signature="SubmitAddressSmoke()[pri:0, instance:tests.SmokeTestCase@7823a2f9]" name="SubmitAddressSmoke" duration-ms="5790" started-at="2019-03-12T15:46:56Z" description="Test fills address form and submits it, SMOKE" depends-on-methods="tests.SmokeTestCase.AddtoCartSmoke" finished-at="2019-03-12T15:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitAddressSmoke -->
+        <test-method status="PASS" signature="FillCCSmoke()[pri:0, instance:tests.SmokeTestCase@7823a2f9]" name="FillCCSmoke" duration-ms="2680" started-at="2019-03-12T15:47:02Z" description="Test proceeds to the payment and fills CC information, SMOKE" depends-on-methods="tests.SmokeTestCase.AddtoCartSmoke, tests.SmokeTestCase.SubmitAddressSmoke" finished-at="2019-03-12T15:47:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillCCSmoke -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:tests.SmokeTestCase@7823a2f9]" name="CloseBrowser" is-config="true" duration-ms="2317" started-at="2019-03-12T15:47:05Z" finished-at="2019-03-12T15:47:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[      Closing...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- tests.SmokeTestCase -->
+      <class name="tests.AddMusicTestCase">
+        <test-method status="PASS" signature="SetupAmazon()[pri:0, instance:tests.AddMusicTestCase@5c7fa833]" name="SetupAmazon" is-config="true" duration-ms="23404" started-at="2019-03-12T15:47:07Z" finished-at="2019-03-12T15:47:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[      Cleaning...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SetupAmazon -->
+        <test-method status="PASS" signature="FindItem()[pri:0, instance:tests.AddMusicTestCase@5c7fa833]" name="FindItem" is-config="true" duration-ms="4412" started-at="2019-03-12T15:47:31Z" finished-at="2019-03-12T15:47:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindItem -->
+        <test-method status="PASS" signature="Add5CDsToCart()[pri:0, instance:tests.AddMusicTestCase@5c7fa833]" name="Add5CDsToCart" duration-ms="10191" started-at="2019-03-12T15:47:35Z" description="Test added and removed 5 Audio CDs" finished-at="2019-03-12T15:47:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add5CDsToCart -->
+        <test-method status="PASS" signature="AddCDToCart()[pri:0, instance:tests.AddMusicTestCase@5c7fa833]" name="AddCDToCart" duration-ms="6434" started-at="2019-03-12T15:47:45Z" description="Add all types of music items and removed them from the carts" finished-at="2019-03-12T15:47:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCDToCart -->
+        <test-method status="PASS" signature="AddCassetteToCart()[pri:0, instance:tests.AddMusicTestCase@5c7fa833]" name="AddCassetteToCart" duration-ms="10019" started-at="2019-03-12T15:47:52Z" description="Add all types of music items and removed them from the carts" finished-at="2019-03-12T15:48:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCassetteToCart -->
+        <test-method status="PASS" signature="AddMp3ToCart()[pri:0, instance:tests.AddMusicTestCase@5c7fa833]" name="AddMp3ToCart" duration-ms="2331" started-at="2019-03-12T15:48:02Z" description="Add all types of music items and removed them from the carts" finished-at="2019-03-12T15:48:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddMp3ToCart -->
+        <test-method status="PASS" signature="AddVinylToCart()[pri:0, instance:tests.AddMusicTestCase@5c7fa833]" name="AddVinylToCart" duration-ms="10383" started-at="2019-03-12T15:48:04Z" description="Add all types of music items and removed them from the carts" finished-at="2019-03-12T15:48:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddVinylToCart -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:tests.AddMusicTestCase@5c7fa833]" name="CloseBrowser" is-config="true" duration-ms="2319" started-at="2019-03-12T15:48:14Z" finished-at="2019-03-12T15:48:17Z">
+          <reporter-output>
+            <line>
+              <![CDATA[      Closing...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- tests.AddMusicTestCase -->
+    </test> <!-- TEST NAME GOES HERE -->
+  </suite> <!-- SUITE NAME GOES HERE -->
+</testng-results>

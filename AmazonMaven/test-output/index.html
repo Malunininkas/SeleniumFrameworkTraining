@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-SUITE_NAME_GOES_HERE">
+              <span class="suite-name border-passed">SUITE NAME GOES HERE</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SUITE_NAME_GOES_HERE">
+                    <span>D:\github\SeleniumFrameworkTraining\AmazonMaven\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-SUITE_NAME_GOES_HERE">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-SUITE_NAME_GOES_HERE">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-SUITE_NAME_GOES_HERE">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-SUITE_NAME_GOES_HERE">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SUITE_NAME_GOES_HERE">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-SUITE_NAME_GOES_HERE">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SUITE_NAME_GOES_HERE" class="hide-methods passed suite-SUITE_NAME_GOES_HERE"> (hide)</a> <!-- hide-methods passed suite-SUITE_NAME_GOES_HERE -->
+                      <a href="#" panel-name="suite-SUITE_NAME_GOES_HERE" class="show-methods passed suite-SUITE_NAME_GOES_HERE"> (show)</a> <!-- show-methods passed suite-SUITE_NAME_GOES_HERE -->
+                    </span>
+                    <div class="method-list-content passed suite-SUITE_NAME_GOES_HERE">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SUITE_NAME_GOES_HERE" title="tests.AddMusicTestCase" hash-for-method="Add5CDsToCart">Add5CDsToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SUITE_NAME_GOES_HERE" title="tests.AddMusicTestCase" hash-for-method="AddCDToCart">AddCDToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SUITE_NAME_GOES_HERE" title="tests.AddMusicTestCase" hash-for-method="AddCassetteToCart">AddCassetteToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SUITE_NAME_GOES_HERE" title="tests.AddMusicTestCase" hash-for-method="AddMp3ToCart">AddMp3ToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SUITE_NAME_GOES_HERE" title="tests.AddMusicTestCase" hash-for-method="AddVinylToCart">AddVinylToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SUITE_NAME_GOES_HERE" title="tests.SmokeTestCase" hash-for-method="AddtoCartSmoke">AddtoCartSmoke</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SUITE_NAME_GOES_HERE" title="tests.SmokeTestCase" hash-for-method="FillCCSmoke">FillCCSmoke</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SUITE_NAME_GOES_HERE" title="tests.SmokeTestCase" hash-for-method="SubmitAddressSmoke">SubmitAddressSmoke</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SUITE_NAME_GOES_HERE -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SUITE_NAME_GOES_HERE" class="panel SUITE_NAME_GOES_HERE">
+          <div class="suite-SUITE_NAME_GOES_HERE-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SmokeTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddtoCartSmoke">
+                  </a> <!-- AddtoCartSmoke -->
+                  <span class="method-name">AddtoCartSmoke</span>
+                  <em>
+(Test adds an item to the cart, SMOKE)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FillCCSmoke">
+                  </a> <!-- FillCCSmoke -->
+                  <span class="method-name">FillCCSmoke</span>
+                  <em>
+(Test proceeds to the payment and fills CC information, SMOKE)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SubmitAddressSmoke">
+                  </a> <!-- SubmitAddressSmoke -->
+                  <span class="method-name">SubmitAddressSmoke</span>
+                  <em>
+(Test fills address form and submits it, SMOKE)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SUITE_NAME_GOES_HERE-class-passed -->
+          <div class="suite-SUITE_NAME_GOES_HERE-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AddMusicTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Add5CDsToCart">
+                  </a> <!-- Add5CDsToCart -->
+                  <span class="method-name">Add5CDsToCart</span>
+                  <em>
+(Test added and removed 5 Audio CDs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddCDToCart">
+                  </a> <!-- AddCDToCart -->
+                  <span class="method-name">AddCDToCart</span>
+                  <em>
+(Add all types of music items and removed them from the carts)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddCassetteToCart">
+                  </a> <!-- AddCassetteToCart -->
+                  <span class="method-name">AddCassetteToCart</span>
+                  <em>
+(Add all types of music items and removed them from the carts)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddMp3ToCart">
+                  </a> <!-- AddMp3ToCart -->
+                  <span class="method-name">AddMp3ToCart</span>
+                  <em>
+(Add all types of music items and removed them from the carts)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddVinylToCart">
+                  </a> <!-- AddVinylToCart -->
+                  <span class="method-name">AddVinylToCart</span>
+                  <em>
+(Add all types of music items and removed them from the carts)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SUITE_NAME_GOES_HERE-class-passed -->
+        </div> <!-- panel SUITE_NAME_GOES_HERE -->
+        <div panel-name="test-xml-SUITE_NAME_GOES_HERE" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\github\SeleniumFrameworkTraining\AmazonMaven\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;SUITE NAME GOES HERE&quot;&gt;
+  &lt;test name=&quot;TEST NAME GOES HERE&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.SmokeTestCase&quot;/&gt;
+      &lt;class name=&quot;tests.AddMusicTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TEST NAME GOES HERE --&gt;
+&lt;/suite&gt; &lt;!-- SUITE NAME GOES HERE --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SUITE_NAME_GOES_HERE" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SUITE NAME GOES HERE</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TEST NAME GOES HERE (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SUITE_NAME_GOES_HERE" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SUITE NAME GOES HERE</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SUITE_NAME_GOES_HERE" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SUITE NAME GOES HERE</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SUITE_NAME_GOES_HERE');
+function tableData_SUITE_NAME_GOES_HERE() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'AddtoCartSmoke')
+data.setCell(0, 2, 'tests.SmokeTestCase')
+data.setCell(0, 3, 10756);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AddVinylToCart')
+data.setCell(1, 2, 'tests.AddMusicTestCase')
+data.setCell(1, 3, 10383);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Add5CDsToCart')
+data.setCell(2, 2, 'tests.AddMusicTestCase')
+data.setCell(2, 3, 10191);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'AddCassetteToCart')
+data.setCell(3, 2, 'tests.AddMusicTestCase')
+data.setCell(3, 3, 10019);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'AddCDToCart')
+data.setCell(4, 2, 'tests.AddMusicTestCase')
+data.setCell(4, 3, 6434);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'SubmitAddressSmoke')
+data.setCell(5, 2, 'tests.SmokeTestCase')
+data.setCell(5, 3, 5790);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'FillCCSmoke')
+data.setCell(6, 2, 'tests.SmokeTestCase')
+data.setCell(6, 3, 2680);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'AddMp3ToCart')
+data.setCell(7, 2, 'tests.AddMusicTestCase')
+data.setCell(7, 3, 2331);
+window.suiteTableData['SUITE_NAME_GOES_HERE']= { tableData: data, tableDiv: 'times-div-SUITE_NAME_GOES_HERE'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <div id="times-div-SUITE_NAME_GOES_HERE">
+              </div> <!-- times-div-SUITE_NAME_GOES_HERE -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SUITE_NAME_GOES_HERE" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SUITE NAME GOES HERE</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SUITE_NAME_GOES_HERE" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SUITE_NAME_GOES_HERE" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SmokeTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">SetupAmazon</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">AddtoCartSmoke</span>
+                <span class="method-start">24814 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SubmitAddressSmoke</span>
+                <span class="method-start">35572 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FillCCSmoke</span>
+                <span class="method-start">41365 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">44046 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AddMusicTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">SetupAmazon</span>
+                <span class="method-start">46364 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">FindItem</span>
+                <span class="method-start">69768 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Add5CDsToCart</span>
+                <span class="method-start">74180 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddCDToCart</span>
+                <span class="method-start">84372 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddCassetteToCart</span>
+                <span class="method-start">90807 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddMp3ToCart</span>
+                <span class="method-start">100827 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddVinylToCart</span>
+                <span class="method-start">103159 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseBrowser</span>
+                <span class="method-start">113543 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
