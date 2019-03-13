@@ -1,9 +1,7 @@
 package amazon.Pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.JavascriptExecutor;
 
 import amazon.AmazonBase;
 
@@ -25,16 +23,15 @@ public class SettingsPages extends AmazonBase{
 		while(size > 0) {
 	
 			logger.debug("choosing address to delete");
-			WebElement itemDelete = (new WebDriverWait(driver, 10))
-					   .until(ExpectedConditions.elementToBeClickable(By.id("ya-myab-address-delete-btn-0")));
-			itemDelete.click();
+			driver.findElement(By.id("ya-myab-address-delete-btn-0")).click();
+			
 	
-			logger.debug("confirming delete address");
-			WebElement delete = (new WebDriverWait(driver, 10))
-					   .until(ExpectedConditions.
-							   elementToBeClickable(By.id("deleteAddressModal-0-submit-btn")));
-			delete.click();
-//BUG: Sometimes delete confirmation gets stuck and loop tries to click itemDelete again, which stops the cleanup
+			logger.debug("waiting 500ms for modal to fade in");
+			JavascriptExecutor js = (JavascriptExecutor)driver;
+			js.executeAsyncScript("window.setTimeout(arguments[arguments.length - 1], 500);");	
+			
+			logger.debug("confirming deletion");
+			driver.findElement(By.id("deleteAddressModal-0-submit-btn")).click();
 			--size;
 		}
 	}

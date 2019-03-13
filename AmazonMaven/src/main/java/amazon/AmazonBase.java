@@ -15,9 +15,9 @@ public class AmazonBase {
 	
 	protected static WebDriver driver;
 	protected static Logger logger;
-	
+		
 	@BeforeClass
-	public static void SetupAmazon()
+	public static void SetupAmazon() 
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mano\\Dropbox\\Selenium\\chromedriver.exe");
 		driver = new ChromeDriver();

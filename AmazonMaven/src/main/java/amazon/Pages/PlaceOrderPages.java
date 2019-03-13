@@ -1,7 +1,6 @@
 package amazon.Pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -9,19 +8,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import amazon.AmazonBase;
 
 public class PlaceOrderPages extends AmazonBase{
-	
-	
-	
-	
-	
-	public static void DeleteShippingAddress() {
-//TASK: Build try delete catch no such element for general cleanup	
-		logger.debug("deleting shipping address");
-		WebElement itemType = driver.findElements(By.className("a-button-text"))
-				.stream().filter(e -> e.getText().equals("Delete")).findFirst().get();
-		itemType.click();
-	}
-	
 	
 	public static void AddAddress(String addressLine1) {
 		
@@ -105,9 +91,12 @@ public class PlaceOrderPages extends AmazonBase{
 	
 	public static void CcValidY(String ccY_yyyy) {
 		
-		logger.debug("adding credit card valid year");
+		logger.debug("openning credit card valid year dropdown in 2019");
 		driver.findElements(By.className("a-dropdown-prompt")).stream().filter(e -> e.getText().equals("2019")).findFirst().get().click();
+		
+		logger.debug("selecting credit card valid year");
 		driver.findElement(By.cssSelector("[data-value=\"" + ccY_yyyy + "\"]")).click();
-//BUG:	This step stale if imported from excel 
+//BUG:	sometimes this happens: no such element: Unable to locate element: {"method":"css selector","selector":"[data-value="2023"]"}
+
 	}	
 }

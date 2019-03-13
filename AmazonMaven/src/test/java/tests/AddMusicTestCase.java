@@ -18,9 +18,6 @@ public class AddMusicTestCase extends AmazonBase {
 	@Test(description="Add all types of music items and removed them from the carts")
 	public static void AddMp3ToCart() 
 	{		
-
-//TASK: make global search
-//TASK: give search parameters from separate file?
 		GlobalPages.SelectItemType("MP3");
 		GlobalPages.AddToCart();
 	}
@@ -50,11 +47,9 @@ public class AddMusicTestCase extends AmazonBase {
 	}
 	
 	@Test(description="Test added and removed 5 Audio CDs")
-	public static void Add5CDsToCart() {
+	public static void Add5VinylssToCart() {
 		
-
-		
-		GlobalPages.SelectItemType("Audio CD");	
+		GlobalPages.SelectItemType("Vinyl");	
 		GlobalPages.SelectQuantity("5");
 		GlobalPages.AddToCart();
 		GlobalPages.GetBackToTheItem();
