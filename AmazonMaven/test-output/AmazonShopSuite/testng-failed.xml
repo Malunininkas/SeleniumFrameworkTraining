@@ -12,6 +12,18 @@
           <include name="FillCCSmoke"/>
         </methods>
       </class> <!-- tests.SmokeTestCase -->
+      <class name="tests.AddMusicTestCase">
+        <methods>
+          <include name="AddVinylToCart"/>
+          <include name="Add5VinylssToCart"/>
+          <include name="AddCDToCart"/>
+          <include name="SetupAmazon"/>
+          <include name="FindItem"/>
+          <include name="CloseBrowser"/>
+          <include name="AddMp3ToCart"/>
+          <include name="AddCassetteToCart"/>
+        </methods>
+      </class> <!-- tests.AddMusicTestCase -->
     </classes>
   </test> <!-- SmokeTest(failed) -->
 </suite> <!-- Failed suite [AmazonShopSuite] -->
