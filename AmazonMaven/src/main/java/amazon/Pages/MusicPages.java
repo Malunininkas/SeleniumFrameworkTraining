@@ -8,12 +8,6 @@ import amazon.AmazonBase;
 public class MusicPages extends AmazonBase {
 
 
-//	public static void NoThanksAmazonMusic() {
-//// --might be global--
-//		WebElement noThanksButton = driver.findElement(By.id("BBOPnoThanks-announce"));
-//		noThanksButton.click();
-//	}
-
 	public static void OpenMp3Cart() {
 		
 		GlobalPages.OpenDepartment("Digital Music");

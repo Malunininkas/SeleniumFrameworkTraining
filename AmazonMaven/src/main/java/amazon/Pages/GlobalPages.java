@@ -162,13 +162,4 @@ public class GlobalPages extends AmazonBase {
 		logger.debug("submitting");
 		driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
 	}
-
-	
-	public static void Continue() {
-//TASK: remove?		GlobalPages.Continue();		
-		logger.debug("continuing");
-		driver.findElement(By.cssSelector("input[value=\"Continue\"]")).click();
-	}
-	
-	
 }

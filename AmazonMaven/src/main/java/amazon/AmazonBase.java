@@ -11,16 +11,20 @@ import amazon.Pages.LoginPages;
 import assets.Cleaner;
 import assets.ExcelRead;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class AmazonBase {
 	
 	protected static WebDriver driver;
+	
 	protected static Logger logger;
 		
 	@BeforeClass
 	public static void SetupAmazon() 
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mano\\Dropbox\\Selenium\\chromedriver.exe");
-		driver = new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        
 //Task:	Headless
 //Task: Screenshots, video		
 		String appUrl = "https://www.amazon.com";
